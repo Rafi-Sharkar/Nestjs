@@ -44,7 +44,13 @@ export class Users1Controller{
 
 
     // v14
-     
+    // There have three type of scope in the injector
+    // Scope.DEFAULT: default scope, it's used for singleton services
+    // Scope.REQUEST: it's used for each HTTP request, it's used for services that depend on request-scoped data
+    // Scope.Transient: A new instance of the provider is created every time it is injected.
+    
+
+     constructor(private store: UsersStore){}
 
 
 
