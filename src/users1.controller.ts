@@ -50,7 +50,9 @@ export class Users1Controller{
     // Scope.Transient: A new instance of the provider is created every time it is injected.
     
 
-     constructor(private store: UsersStore){}
+     constructor(private store: UsersStore){
+        console.log("UsersStore initialized");
+     }
 
 
 
